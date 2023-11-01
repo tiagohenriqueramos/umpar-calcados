@@ -10,6 +10,8 @@ public interface CalcadosService {
 	
 	Calcados buscarPorId(Long id);
 	
+	Calcados cadastrar(Calcados calcados);
+	
 	Calcados editarCalcados(Long id, Calcados calcados);
 	
 	void deletarCalcados(Long id);

@@ -5,11 +5,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+
+@AllArgsConstructor
 @RequiredArgsConstructor
 @Getter
 @Setter
@@ -22,11 +25,10 @@ public class Calcados {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private Integer tamanho;
+	private String tamanho;
 	private Double preco;
 	private String marca;
 	private String cor;
-	private String tipo;
 	private String material;
 
 }

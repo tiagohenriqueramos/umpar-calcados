@@ -28,7 +28,10 @@ public class CalcadosServiceImpl implements CalcadosService {
 		Optional<Calcados> calcados = repository.findById(id);
 		return calcados.orElseThrow(() -> new ResourceNotFoundException("Sem calçados com esta Id!"));
 	}
-
+	@Override
+	public Calcados cadastrar(Calcados calcados) {
+		return repository.save(calcados);
+	}
 	@Override
 	public Calcados editarCalcados(Long id, Calcados novoCalcados) {
 		try {
@@ -48,7 +51,6 @@ public class CalcadosServiceImpl implements CalcadosService {
 		calcados.setPreco(novoCalcados.getPreco());
 		calcados.setMarca(novoCalcados.getMarca());
 		calcados.setCor(novoCalcados.getCor());
-		calcados.setTipo(novoCalcados.getTipo());
 		calcados.setMaterial(novoCalcados.getMaterial());
 		
 	}
@@ -62,5 +64,7 @@ public class CalcadosServiceImpl implements CalcadosService {
 
 		}
 	}
+
+
 
 }
