@@ -1,0 +1,49 @@
+.headerContainer {
+    height: 8rem;
+    margin: 0;
+    background:  linear-gradient(to left, var(--bege), var(--bege)); 
+    
+}
+
+.headerContent {
+    
+    max-width: 1120px;
+    height: 9rem;
+    margin: 0 auto;
+    padding: 0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+    }
+
+}
+
+.menuNav {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: var(--vermelho);
+        padding: 0 0.5rem;
+        display: inline-block;
+        position: relative;
+
+        &+a {
+            margin-left: 2rem;
+        }
+    }
+    button{
+        margin-left: 2rem;
+        background: transparent;
+        border: 0;
+        transition: transform 0.8s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.headerContainer {
+    position: fixed;
+    bottom: 0;
+    height: 8rem;
+    margin: 0;
+    background: linear-gradient(to left, var(--bege), var(--bege));
+    width: 100%;
+}
+
+.headerContent {
+    max-width: 1120px;
+    height: 9rem;
+    margin: 0 auto;
+    padding: 0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+    }
+}

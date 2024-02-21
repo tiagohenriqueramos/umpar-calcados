@@ -1,0 +1,133 @@
+.containerCenter{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient(to left, var(--bege), var(--bege)); 
+  
+  }
+  
+  .login{
+    margin-top: 2rem;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  
+    h1{
+      padding: 1rem;
+    }
+  
+    form{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    form bottom{
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .text{
+    margin-top: 1rem;
+    color: var(--vermelho);
+    cursor: pointer;
+  }
+  
+  @media(max-width: 620px){
+    .login{
+      width: 90%;
+    }
+  }
+
+
+/*
+
+:root { 
+    --corTexto: rgb(51, 255, 187);
+    //criando variavel
+}
+.h1 {
+    
+        color: black; 
+        font-family:  sans-serif; // tipo da fonte
+        font-size: 20px; // tamnaho da fonte
+        font-weight: 100; // largura da fonte, fina ou grossa
+        background-color: burlywood; //estilo do fundo
+        width: 150px; // altura 
+        height: 150px; // largura
+        border: 2px solid #f33; // largura da borda, tipo, cor
+        border-radius: 10px; //arredondar a borda
+        padding: 20px; // espaçamento interno ex: 0px; 0px; 0px; 0px;
+        margin: 50px; // espaçamento externo
+        margin-top: 20px;
+        margin-bottom: 35px;
+    
+
+}
+
+.h2 {
+    
+    color: rgb(0, 0, 0); 
+    font-family:  sans-serif; // tipo da fonte
+    font-size: 10px; // tamnaho da fonte
+    font-weight: 100; // largura da fonte, fina ou grossa
+    //background-color: cornflowerblue; //estilo do fundo
+    width: 100px; // altura 
+    height: 100px; // largura
+    border: 2px solid rgb(0, 0, 0); // largura da borda, tipo, cor
+    border-radius: 10px; //arredondar a borda
+    padding-top: 25px; // espaçamento interno ex: 0px; 0px; 0px; 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    margin: 50px; // espaçamento externo
+    margin-top: 20px;
+    margin-bottom: 35px;
+    //display: none; remove o elemento na tela
+    display: inline; // texto continua seguindo
+    display: block; //texto em bloco
+    box-shadow: 10px 10px 8px 0px var(--corTexto); // gera uma sombra efeito 3D
+    opacity: 0.6; // deixa o elemento tranparente
+    background: linear-gradient(to right, #dce4e9, #0099ff); //estilo de fundo de linear
+
+}
+
+.p2{
+    padding-top: 25px; // espaçamento interno ex: 0px; 0px; 0px; 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+/*input:focus {
+    border: 2px solid #f33;
+    border-radius: 16px;
+    //vai mudar quando clicar na caixa
+}
+
+a:hover{
+    color: #f33;
+    // mudar a cor do link quando mause estiver nele
+}
+
+a:visited{
+    color: green;
+    //quando o link já foi cliclado
+}
+
+a:active{
+    color: aqua;
+    //quando o link é clicado
+}
+
+a{
+    transition: 0.2s;
+    //quando o mause vai no link, muda se devagar
+}
+*/
+

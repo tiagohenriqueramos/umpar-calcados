@@ -1,0 +1,112 @@
+
+
+
+.container {
+    max-width: 1120px;
+    margin: 100px auto;
+    padding: 25px;  
+    background-color: var(--bege-claro);
+    border: 3px solid var(--laranja);
+    border-radius: 0.3rem;
+}
+
+
+
+.container h1{
+     color: var(--vermelho)
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    z-index: 1; 
+   
+}
+
+.input{
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--black);
+    background-color: var(--bege-claro-);
+    border: 2px solid var(--laranja);
+    height: 40px;
+    padding: 0.0.5rem;
+   &::placeholder{
+        color: var(--black);
+    }
+    
+}
+.buttonAdd{
+    border-radius: 0.3rem;
+    height: 40px;
+    border: 2px solid var(--laranja);
+    background:  linear-gradient(to right, var(--vermelho), var(--bege)); 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white)
+    
+}
+
+.labelAvatar{
+    width: 100%;
+    height: 200px;
+    background:  linear-gradient(to left, var(--vermelho), var(--bege)); 
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: 2px solid var(--laranja);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    input{
+        display: none;
+}
+span{
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+span:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+}
+
+.preview{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.select{
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--black);
+    background-color: var(--bege-claro-);
+    border: 2px solid var(--laranja);
+    height: 40px;
+    padding: 0.0.5rem;
+   &::placeholder{
+        color: var(--black);
+    }
+  }
+  .inputTamanhoQuantidade{
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 0.3rem; 
+    width: 32%;
+    color: var(--black);
+    background-color: var(--bege-claro-);
+    border: 2px solid var(--laranja);
+    height: 40px;
+    padding: 0.0.5rem;
+   &::placeholder{
+        color: var(--black);
+    }
+    
+  }

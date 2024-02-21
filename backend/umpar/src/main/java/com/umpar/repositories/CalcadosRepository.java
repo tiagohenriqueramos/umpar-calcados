@@ -6,4 +6,5 @@ import com.umpar.entities.Calcados;
 
 public interface CalcadosRepository extends JpaRepository<Calcados, Long>{
 
+
 }

@@ -1,0 +1,78 @@
+.container {
+    max-width: 1120px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: var(--bege-claro);
+    border: 3px solid var(--laranja);
+    border-radius: 0.3rem;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: var(--vermelho)
+}
+
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        background: transparent;
+        border: 0;
+        margin-left: 1rem;
+
+
+    }
+
+}
+
+.listCalcados {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 25px;
+
+
+}
+
+.calcadosItem {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, var(--vermelho), var(--bege));
+    margin-bottom: 1rem;
+    align-items: center;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
+    border: 2px solid var(--laranja);
+
+
+    button {
+        border: 0;
+        background: transparent;
+        font-size: 1.2rem;
+        color: var(--white);
+        height: 60px;
+        align-items: center;
+        display: flex;
+
+    }
+}
+
+.tag {
+
+    margin-right: 0.3rem;
+}
+
+.card {
+    max-width: 120px;
+    margin: 4rem auto;
+    padding: 0.5rem;
+    background-color: var(--bege-claro);
+    border: 3px solid var(--laranja);
+
+    display: flex;
+    flex-direction: column;
+}
